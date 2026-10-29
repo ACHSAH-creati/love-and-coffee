@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love&Coffee | Início</title>
+    <link rel="stylesheet" href="navegacao.css">
+    <script src="localizador.js" defer></script>
+</head>
+<body>
+ <header class="site-header">
+    <nav class="site-nav" aria-label="Navegação principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <a class="brand" href="index.html" aria-label="Love&Coffee — página inicial">
+            <img src="../midias/logomarca lovecoffee.png" alt="Love&Coffee">
+        </a>
+    </nav>
+ </header>
+ <main>
+    <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero-image">
+            <source media="(max-width: 600px)" srcset="../midias/grãos%20P.jpg">
+            <source media="(max-width: 1024px)" srcset="../midias/grãos%20M.jpg">
+            <img src="../midias/grãos G.jpg" alt="Grãos de café">
+        </picture>
+        <div class="hero-copy">
+            <h1 id="hero-title">Love&Coffee</h1>
+            <h2>Para os amantes da bebida.</h2>
+        </div>
+    </section>
+    <section class="menu-highlights" aria-label="Destaques do cardápio">
+        <div class="menu-cards">
+            <article class="menu-card">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../midias/cha%20P.jpg">
+                    <source media="(max-width: 1024px)" srcset="../midias/cha%20M.jpg">
+                    <img src="../midias/cha G.jpg" alt="Seleção de chás">
+                </picture>
+                <h3>Chás</h3>
+            </article>
+            <article class="menu-card">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../midias/bebida%20gelada%20P.jpg">
+                    <source media="(max-width: 1024px)" srcset="../midias/bebida%20gelada%20M.jpg">
+                    <img src="../midias/bebida gelada G.jpg" alt="Bebidas geladas">
+                </picture>
+                <h3>Bebidas Geladas</h3>
+            </article>
+            <article class="menu-card">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../midias/bolo%20P.jpg">
+                    <source media="(max-width: 1024px)" srcset="../midias/bolo%20M.jpg">
+                    <img src="../midias/bolo G.jpg" alt="Bolos e outras opções">
+                </picture>
+                <h3>Bolos e mais!</h3>
+            </article>
+        </div>
+        <a class="menu-button" href="cardapio.html">Conhecer cardápio</a>
+    </section>
+    <section class="store" aria-labelledby="store-title">
+        <picture class="store-image">
+            <source media="(max-width: 600px)" srcset="../midias/Espa%C3%A7o%20P.jpg">
+            <source media="(max-width: 1024px)" srcset="../midias/Espa%C3%A7o%20M.jpg">
+            <img src="../midias/Espaço G.jpg" alt="Ambiente da loja Love&Coffee">
+        </picture>
+        <h2 id="store-title">Venha conhecer nossa loja física!</h2>
+        <div class="store-finder" aria-labelledby="store-finder-title">
+            <h3 id="store-finder-title">Encontre a unidade mais próxima</h3>
+            <p class="store-note">
+                Unidades fictícias em São Paulo, Rio de Janeiro e Belo Horizonte (MG).
+                O cálculo usa pontos aproximados no centro de cada cidade, apenas para demonstração.
+                Sua localização é processada no navegador e não é enviada.
+            </p>
+            <button class="store-button" id="find-store" type="button">Encontrar unidade mais próxima</button>
+            <p class="store-result" id="store-result" aria-live="polite"></p>
+        </div>
+    </section>
+ </main>
+ <footer class="site-footer">
+    <a class="footer-brand" href="index.html" aria-label="Love&Coffee — página inicial">
+        <img src="../midias/logomarca lovecoffee.png" alt="Love&Coffee">
+    </a>
+    <p class="footer-copyright">&copy; 2026 Love&Coffee. Todos os direitos autorais estão reservados.</p>
+    <nav class="footer-social" aria-label="Aplicativos e redes sociais">
+        <a href="whatsapp://send" aria-label="Abrir WhatsApp" title="Abrir WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.82 9.82 0 0 0-8.43 14.87L2.3 22l5.27-1.38A9.93 9.93 0 0 0 12.04 22h.01A10 10 0 0 0 12.04 2Zm0 18.18a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.31a8.18 8.18 0 1 1 6.97 3.86Zm4.49-6.13c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.05-.39-2-.1-.74-.34-1.23-.76-1.38-1.01-.14-.25-.02-.39.11-.52.11-.11.25-.3.38-.44.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.52.61.19 1.16.16 1.6.1.49-.07 1.48-.61 1.69-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.17-.48-.3Z"/></svg>
+        </a>
+        <a href="snssdk1233://" aria-label="Abrir TikTok" title="Abrir TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.32V2h-3.45v13.67a2.9 2.9 0 0 1-2.9 2.9 2.9 2.9 0 1 1 2.1-4.9v-3.53a6.34 6.34 0 1 0 4.25 6V9.2a8.2 8.2 0 0 0 4.8 1.54V7.3a4.85 4.85 0 0 1-1.03-.61Z"/></svg>
+        </a>
+        <a href="instagram://app" aria-label="Abrir Instagram" title="Abrir Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm4.4 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+        </a>
+    </nav>
+ </footer>
+</body>
+</html>
